@@ -1,0 +1,21 @@
+# Clean DeepEyes baseline. Do not put model weights, datasets, or secrets in Git.
+model:
+  id: ChenShawn/DeepEyes-7B
+  api_base: http://127.0.0.1:8000/v1
+  api_key_env: OPENAI_API_KEY
+  temperature: 0.0
+  max_tokens_per_turn: 10240
+  max_turns: 10
+  stop:
+    - <|im_end|>
+
+dataset:
+  id: Gisiyuan/ScienceQA
+  split: test
+  streaming: true
+  image_only: true
+  max_samples: 20
+
+output:
+  directory: outputs/deepeyes/scienceqa_clean
+  save_crops: true

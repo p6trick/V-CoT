@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Machine-local credentials and heavyweight experiment material.
+.env
+.env.*
+!.env.example
+data/
+outputs/
+artifacts/
+checkpoints/
+models/
+.cache/
+wandb/
+*.safetensors
+*.pt
+*.pth
+*.ckpt

@@ -1,0 +1,6 @@
+# GPU-server runtime, matched to Visual-Agent/DeepEyes requirements_deepeyes.txt.
+# Install only on the GPU server, after selecting a CUDA/driver-compatible PyTorch wheel.
+vllm==0.8.2
+transformers==4.51.3
+accelerate==1.2.1
+qwen-vl-utils==0.0.11
